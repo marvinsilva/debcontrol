@@ -643,7 +643,7 @@ function toast(msg,label,fn){
 /* ================= formulário ================= */
 let f=null;
 function blankShift(date){
-  return {id:null,date,place:'',type:'hora',start:'07:00',hours:12,rate:0,fixed:0,count:0,perCount:0,costs:[],paid:false,note:'',pay:{mode:'default',date:''}};
+  return {id:null,date,place:'',type:'hora',start:'19:00',hours:12,rate:0,fixed:0,count:0,perCount:0,costs:[],paid:false,note:'',pay:{mode:'default',date:''}};
 }
 function costRow(c){
   return `<div class="cost"><input class="cd" type="text" placeholder="Descrição" value="${esc(c.d)}" autocapitalize="sentences" aria-label="Descrição do custo">
@@ -707,7 +707,7 @@ function formHTML(){
 function readForm(){
   f.date=$('#f-date').value;
   f.place=$('#f-place').value.trim();
-  f.start=$('#f-start').value||'07:00';
+  f.start=$('#f-start').value||'19:00';
   f.hours=Math.max(0,Math.min(48,num($('#f-hours').value)));
   f.rate=money($('#f-rate').value);
   f.fixed=money($('#f-fixed').value);
