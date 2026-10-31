@@ -1,6 +1,6 @@
 // Se você alterar o index.html e publicar de novo, troque o número da versão abaixo
 // para que o iPhone baixe a atualização.
-const CACHE = 'plantoes-v1';
+const CACHE = 'plantoes-v3';
 const ASSETS = [
   './',
   './index.html',
